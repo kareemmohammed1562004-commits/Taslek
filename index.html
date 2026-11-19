@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="شركة متخصصة في تسليك المجاري ةالبلوعات والصرف الصحي والصيانه ">
+    <meta name="keywords" content="تسليك مجاري وصرف صحي السعودة داخل الرياض">
+<title>تسليك بلعات وصرف صحي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- ============ الموقع ============ -->
+  <div id="site">
+    <header class="nav">
+      <a href="#top" class="logo"><span class="drop">💧</span><b>تسليك مجاري<br>والصرف الصحي</b></a>
+      <button id="menuBtn" class="burger" aria-label="القائمة">☰</button>
+    <nav id="menu">
+      <a href="#top">الرئيسية</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#works">أعمالنا</a>
+      <a href="#contact">تواصل معنا</a>
+      <a href="#admin" class="adm">لوحة التحكم</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <img src="IMG-20261114-WA0009.jpg" alt="" class="hero-img">
+    <div class="hero-txt">
+      <h1>تسليك مجاري<span>وصرف صحي</span></h1>
+      <p class="sub">بسرعة .. احترافية .. بأسعار مناسبة</p>
+      <ul class="feats">
+        <li><i>👍</i>فريق متخصص</li>
+        <li><i>⏱️</i>سرعة في الإنجاز</li>
+        <li><i>🛡️</i>ضمان على العمل</li>
+      </ul>
+      <div class="cta">
+        <a class="btn call" data-call href="#">📞 اتصل بنا الآن</a>
+        <a class="btn wa" data-wa target="_blank" rel="noopener" href="#">💬 تواصل واتساب</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="services">
+    <h2 class="ttl">خدماتنا</h2>
+    <div class="cards">
+      <article class="card"><i>🏠</i><h3>تسليك البلاعات</h3></article>
+      <article class="card"><i>🕳️</i><h3>تسليك المجاري</h3></article>
+      <article class="card"><i>🛠️</i><h3>صيانة الصرف الصحي</h3></article>
+      <article class="card"><i>🚚</i><h3>كسح المجاري</h3></article>
+    </div>
+  </section>
+
+  <section class="sec" id="works">
+    <div class="ttl-row">
+      <h2 class="ttl">أعمالنا</h2>
+      <button id="moreBtn" class="more">عرض المزيد ←</button>
+    </div>
+    <div id="worksGrid" class="works"></div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="c-head"><h2>تواصل معنا الآن</h2><p>لحجز أو الاستفسار نحن في خدمتك دائماً</p></div>
+    <div class="c-btns">
+      <a class="c-btn" data-wa target="_blank" rel="noopener" href="#"><b>💬 تواصل واتساب</b><small>اضغط هنا ←</small></a>
+      <a class="c-btn" data-call href="#"><b>📞 اتصل بنا</b><small data-phone></small></a>
+      <a class="c-btn" target="_blank" rel="noopener" href="https://maps.google.com/?q=السعودية"><b>📍 موقعنا</b><small>السعودية-الرياض</small></a>
+    </div>
+    <div class="h24"><strong>24</strong><span>خدمة على مدار الساعة</span></div>
+  </section>
+  <footer class="foot">© جميع الحقوق محفوظة - تسليك بلعات وصرف صحي</footer>
+</div>
+
+<!-- ============ تسجيل الدخول ============ -->
+<div id="login" hidden>
+  <form id="loginForm" class="login-box" novalidate>
+    <div class="drop lg">💧</div>
+    <h2>تسجيل الدخول</h2>
+    <p class="hint">لوحة تحكم تسليك البلعات والصرف الصحي</p>
+    <label for="lUser">اسم المستخدم</label>
+    <input id="lUser" autocomplete="username" dir="ltr" required>
+    <label for="lPass">كلمة المرور</label>
+    <div class="pw"><input id="lPass" type="password" autocomplete="current-password" dir="ltr" required><button type="button" id="showPw" aria-label="إظهار كلمة المرور">👁️</button></div>
+    <p id="lErr" class="lerr" role="alert"></p>
+    <button class="publish" type="submit">🔐 دخول</button>
+    <a href="#top" class="back">← العودة للموقع</a>
+  </form>
+</div>
+
+<!-- ============ لوحة التحكم ============ -->
+<div id="admin" hidden>
+  <aside id="side">
+    <div class="side-h"><span class="drop">💧</span> لوحة التحكم</div>
+    <button data-go="dash" class="on">🏠 لوحة التحكم</button>
+    <button data-go="new">➕ إضافة منشور جديد</button>
+    <button data-go="posts">📋 إدارة المنشورات</button>
+    <button data-go="images">🖼️ إدارة الصور</button>
+    <button data-go="contact">✉️ تواصل معنا</button>
+    <button data-go="settings">⚙️ الإعدادات</button>
+  </aside>
+
+  <main class="a-main">
+    <div class="a-top">
+      <button id="sideBtn" class="burger dark" aria-label="القائمة">☰</button>
+      <h1>لوحة التحكم</h1>
+      <div class="user"><span>👤</span><div><small>مرحباً بك</small><b> Eng Kareem</b></div></div>
+      <button id="logout" class="logout">تسجيل الخروج ⎋</button>
+    </div>
+    <section data-view="dash">
+      <div class="stats">
+        <div class="stat s1"><span>🖼️</span><p>إجمالي المنشورات</p><b id="stPosts">0</b></div>
+        <div class="stat s2"><span>📷</span><p>إجمالي الصور</p><b id="stImgs">0</b></div>
+        <div class="stat s3"><span>👁️</span><p>زيارات الموقع</p><b id="stVis">0</b></div>
+      </div>
+
+      <form id="postForm" class="panel" novalidate>
+        <h3>📢 إضافة منشور جديد</h3>
+        <label for="pTitle">عنوان المنشور</label>
+        <input id="pTitle" placeholder="مثال: تسليك بلاعات بسرعة" maxlength="80">
+        <label for="pText">تفاصيل المنشور</label>
+        <textarea id="pText" rows="3" placeholder="اكتب تفاصيل المنشور هنا ..."></textarea>
+        <label>رفع الصور</label>
+        <div class="drop-zone" id="dz1" tabindex="0">
+          <span>☁️</span><p>اسحب الصور هنا أو اختر</p><small>(JPG, PNG)</small>
+          <input type="file" id="f1" accept="image/*" multiple hidden>
+        </div>
+        <div id="pending" class="thumbs"></div>
+        <button class="publish" type="submit">✈️ نشر المنشور</button>
+      </form>
+
+      <div class="panel">
+        <div class="p-head"><h3>آخر المنشورات</h3><button class="link" data-go="posts">← عرض الكل</button></div>
+        <div class="tbl"><table><thead><tr><th>الصورة</th><th>العنوان</th><th>تاريخ النشر</th><th>إجراءات</th></tr></thead><tbody id="latest"></tbody></table></div>
+      </div>
+    </section>
+
+    <section data-view="posts" hidden>
+      <div class="panel"><h3>إدارة المنشورات</h3>
+        <div class="tbl"><table><thead><tr><th>الصورة</th><th>العنوان</th><th>تاريخ النشر</th><th>إجراءات</th></tr></thead><tbody id="allPosts"></tbody></table></div>
+      </div>
+    </section>
+
+    <section data-view="images" hidden>
+      <div class="panel"><h3>🖼️ إدارة صور المعرض</h3>
+        <p class="hint">الصور المرفوعة تظهر مباشرة في قسم «أعمالنا» بالموقع.</p>
+        <div class="drop-zone" id="dz2" tabindex="0">
+          <span>☁️</span><p>اسحب الصور هنا أو اختر</p><small>(JPG, PNG)</small>
+          <input type="file" id="f2" accept="image/*" multiple hidden>
+        </div>
+        <div id="imgGrid" class="thumbs big"></div>
+      </div>
+    </section>
+ 
+    <section data-view="settings" hidden>
+      <form id="setForm" class="panel"><h3>⚙️ الإعدادات</h3>
+        <label for="sPhone">رقم الاتصال</label><input id="sPhone" inputmode="tel" dir="ltr">
+        <label for="sWa">رقم الواتساب (بصيغة دولية مثل 966508162112+)</label><input id="sWa" inputmode="tel" dir="ltr">
+        <button class="publish" type="submit">💾 حفظ الإعدادات</button>
+      </form>
+      <form id="accForm" class="panel"><h3>🔐 بيانات تسجيل الدخول</h3>
+        <label for="aUser">اسم المستخدم</label><input id="aUser" dir="ltr" autocomplete="username">
+        <label for="aCur">كلمة المرور الحالية</label><input id="aCur" type="password" dir="ltr" autocomplete="current-password">
+        <label for="aNew">كلمة مرور جديدة (اتركها فارغة لو مش عايز تغيّرها)</label><input id="aNew" type="password" dir="ltr" autocomplete="new-password">
+        <button class="publish" type="submit">💾 تحديث بيانات الدخول</button>
+      </form>
+    </section>
+  </main>
+</div>
+
+<div id="lightbox" hidden><img alt=""></div>
+<div id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
